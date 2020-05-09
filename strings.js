@@ -8,15 +8,14 @@ longBurp(5) ➞ "Burrrrrp"
 */
 
 function longBurp(num) {
-	var repeatedR = 'r'
-	for (var i = 0; i < num - 1; i++) {
-		repeatedR += repeatedR[i]
-	}
-	return 'Bu' + repeatedR + 'p'
+    var repeatedR = 'r'
+    for (var i = 0; i < num - 1; i++) {
+	repeatedR += repeatedR[i]
+    }
+    return 'Bu' + repeatedR + 'p'
 }
 
-//testing our function by calling it 
-
+//testing our function by calling it
 console.log(longBurp(3)) // --> "Burrrp"
 console.log(longBurp(5)) // --> "Burrrrrp"
 console.log(longBurp(9)) // --> "Burrrrrrrrrp"
